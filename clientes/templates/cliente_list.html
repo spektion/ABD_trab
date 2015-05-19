@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>Tric</title>
+	</head>
+
+	<body>
+		<h1>Tric</h1>
+		<h2>cliente_list</h2>
+
+		{% if cliente_list %}
+			<ul>
+				{%for cliente in cliente_lista %}
+				<li><a href = {{ page.url }}"/cliente/{{clinete.0}}"
+					style = "font-weight: bolder;display: inline">
+					{{cliente.1}}, {{cliente.2}}, {{cliente.3}}, 
+					</a>
+				</li>
+				{% endfor %}
+
+			</ul>
+			<a href="new">Newcliente</a>
+
+		{% else %}
+
+		<p> NAO EXISTEM CLIENTES</p>
+
+		{% endif %}
+
+	</body>
+
+	</html>

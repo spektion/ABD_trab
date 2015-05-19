@@ -1,0 +1,23 @@
+
+<html>
+    <head>
+        <title>Trick</title>
+    </head>
+
+    <body>
+        <h1>Trick</h1>
+        <h2>Clientes {{ cliente_detail.0 }}</h2>
+
+        <p><a style = "font-weight: bolder">Cliente 1: </a><a>{{ cliente_detail.1 }}</a></p>
+        <p><a style = "font-weight: bolder; display: inline">Cliente 2: </a><a>{{ cliente_detail.2 }}</a></p>
+        <p><a style = "font-weight: bolder; display: inline">Data: </a><a>{{ cliente_detail.3 }}</a></p>
+        <p><a style = "font-weight: bolder; display: inline">Location: </a><a>{{ cliente_detail.4 }}</a></p>
+
+        <h3><a href="/cliente/{{ cliente_detail.0 }}/update">Update item</a></h3>
+        <h3><a href="/cliente/{{ cliente_detail.0 }}/delete">Delete item</a></h3>
+
+        <h3>Go <a href={{ page.url }}"/clientes">Back to List</a></h3>
+
+
+    </body>
+</html>    

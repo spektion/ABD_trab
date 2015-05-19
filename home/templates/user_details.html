@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+{% block title %}User <code>{{ user.1 }}</code> Details{% endblock %}
+{% block subtitle %}See Your User Details {% endblock %}
+
+
+{% block main_body %}
+	<div class="form-group form-horizontal">
+	    <p><span class="col-sm-2" style = "font-weight: bolder; text-align:right;">username:</span><span>{{ user.0 }}</span></p>
+	    <p><span class="col-sm-2" style = "font-weight: bolder; text-align:right;">username:</span><span>{{ user.1 }}</span></p>
+	    <p><span class="col-sm-2" style = "font-weight: bolder; text-align:right;">email: </span><span>{{ user.2 }}</span></p>
+
+    <div class="form-group tri_button_zone">
+	    <a class="btn btn-primary" href={{ page.url }}"/">Back to Home</a>
+	</div>    
+{% endblock %}
